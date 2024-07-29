@@ -1,0 +1,110 @@
+h1 {
+    font-weight: 600;
+    color: rgb(143, 143, 111);
+
+    }
+     body{
+        text-align: center;
+        font-size: 2rem;
+        line-height: 40px;
+        margin: 0;
+        padding: 0%;
+     }
+        
+     .one{
+        margin-left: 34px;
+        text-align: center;
+        border-radius: 5px;
+    }
+    .two{
+        margin-left: 49px;
+        text-align: center;
+        border-radius: 5px; 
+    }
+    .three{
+        margin-left: 35px;
+        text-align: center;
+        border-radius: 5px;
+        
+    }
+    .location{
+        margin-left: 10px;
+        text-align: center;
+        border-radius: 5px;
+
+
+    }
+    input{
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 5px;
+    }
+
+    form{
+        
+        padding: 8rem 12rem;
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    
+
+    
+
+
+
+    .paragraph3{
+        color: aliceblue;
+        margin-top: 1rem;
+    }
+    .part{
+        background-color: rgb(170, 182, 178);
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 10px;
+        padding-bottom: 20px;
+    }
+
+    label{
+        color: aliceblue;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+
+    }
+
+    span{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+    span input{
+        border-radius: 2rem;
+        width: 20rem;
+        text-align: center;
+        font-size: 1.5rem;
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+    }
+
+
+    img{
+        width: 250px;
+        border-radius: 10em;
+        height: 250px;
+        
+    
+    }
+    a{
+        text-decoration: none;
+        
+        color: rgb(117, 196, 14);
+    }
+  
+
