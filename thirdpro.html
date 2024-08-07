@@ -1,77 +1,104 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>About Bits</title>
-        <style>
-            body{
-                line-height:20px;
-                font-size: large;
-                h1,h2,h3{
-                    color: rgb(88, 64, 32);
-                    
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Bits</title>
+    <style>
+        /* Global styles */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            line-height: 1.6;
+            font-size: large;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+        }
 
-                }
-               .p1,.p2,.p3,.p4{
-                background-color: rgb(178, 194, 194);
-                
+        /* Heading styles */
+        h1, h2, h3 {
+            color: rgb(88, 64, 32);
+        }
 
-                }
-                .firstlist{
-                    background-color: rgb(165, 156, 145);
-                }
-                .secondlist{
-                    background-color: rgb(165, 156, 145);
-  
+        /* Paragraph styles */
+        .p1, .p2, .p3, .p4 {
+            background-color: rgb(178, 194, 194);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+        }
 
-                }
-              
+        /* List styles */
+        .firstlist, .secondlist {
+            background-color: rgb(165, 156, 145);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+        }
 
-            }
-        </style>
-    </head>
+        /* Main content */
+        main {
+            flex: 1;
+            padding: 20px;
+        }
 
-    <body>
+        /* Footer */
+        footer {
+            background-color: #8f8f6f;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <main>
         <h1>Mission</h1>
-        <div style="display: inline-block;text-align:">
-        <p class="p1">
-            Our mission is to equip individuals with essential skills in ICT to thrive in today's digital world.<br/>
-            We believe in the power of education to transform lives and are commited to providing top-notch <br/>
-            training and resources to our students 
-        </p>
-    </div>
-
-        <h2>What we offer</h2>
-        <div style="display: inline-block;">
-        <p class="p2">
-            We offer a wide range of courses designed to meet the needs of learners at all levels , <br/>
-            from beginners to advance practitioners. Our offering includes
-        </p>
-        <ul class="firstlist">
-            <li><b>Basic Computer Skills:</b></Br>Perfect for those starting their Journey in the Tech World</li><br/>
-            <li><b>Proraming and Coding:</b><br/> Learn Languages such as Python, java, Html, and css</li><br/>
-            <li><b>Cybersecurity:</b><br/>Understand the fundamentals of protecting information system</li><br/>
-            <li><b>Data Analysis:</b><br>Gain skills in data collection, processing and visualization </li>
-
-        </ul>
-    
-
-        <p class="p3">Our approach and our teaching methodology conbines theoretical with practical, hands-on experience.<br/>
-        we  believe in learning by doing, which is why our courses are rich with interactive element<br/>
-    ,real-world projects, and assignments that mimics the challenges faced in the tech industry</p>
-    <p>
-    </div>
-        <h3>Why Choose Us</h3>
-
-      <div style="display: inline-block;">  
-    </p>
-    
-    <ol class="secondlist">
-        <li><b>Experience Instructors:</b><br/> Learn from experts who are passionate about teaching and technology</li></br>
-        <li><b>Flexible learning:</b></li>our courses anytime anywhere and learning at your own pace</li></br>
-         </ol>
-
-         <p class="p4"> Join Bits Information Techology Academy today and take the first step towards mastering the digital swold</p>
+        <div>
+            <p class="p1">
+                Our mission is to equip individuals with essential skills in ICT to thrive in today's digital world.<br/>
+                We believe in the power of education to transform lives and are committed to providing top-notch <br/>
+                training and resources to our students.
+            </p>
         </div>
 
-    </body>
+        <h2>What We Offer</h2>
+        <div>
+            <p class="p2">
+                We offer a wide range of courses designed to meet the needs of learners at all levels, <br/>
+                from beginners to advanced practitioners. Our offerings include:
+            </p>
+            <ul class="firstlist">
+                <li><b>Basic Computer Skills:</b> Perfect for those starting their journey in the tech world.</li>
+                <li><b>Programming and Coding:</b> Learn languages such as Python, Java, HTML, and CSS.</li>
+                <li><b>Cybersecurity:</b> Understand the fundamentals of protecting information systems.</li>
+                <li><b>Data Analysis:</b> Gain skills in data collection, processing, and visualization.</li>
+            </ul>
+
+            <p class="p3">
+                Our approach combines theoretical with practical, hands-on experience.<br/>
+                We believe in learning by doing, which is why our courses are rich with interactive elements,<br/>
+                real-world projects, and assignments that mimic the challenges faced in the tech industry.
+            </p>
+        </div>
+
+        <h3>Why Choose Us</h3>
+        <div>
+            <ol class="secondlist">
+                <li><b>Experienced Instructors:</b> Learn from experts who are passionate about teaching and technology.</li>
+                <li><b>Flexible Learning:</b> Access our courses anytime, anywhere, and learn at your own pace.</li>
+            </ol>
+
+            <p class="p4">Join Bits Information Technology Academy today and take the first step towards mastering the digital world.</p>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2024 Bits Information Technology Academy. All rights reserved.
+    </footer>
+</body>
 </html>
