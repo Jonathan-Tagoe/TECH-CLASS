@@ -1,110 +1,197 @@
+ /* Global styles */
+ body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Navigation bar */
+nav {
+    background-color: #8f8f6f;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ddd;
+}
+
+/* Headings */
 h1 {
     font-weight: 600;
     color: rgb(143, 143, 111);
+    margin-top: 2rem;
+}
 
+/* Image */
+img {
+    width: 250px;
+    height: 250px;
+    border-radius: 10em;
+    margin-top: 2rem;
+}
+
+/* Form container */
+.part {
+    background-color: rgb(170, 182, 178);
+    padding: 25px;
+    border-radius: 10px;
+    margin: 3rem auto;
+    /* width: 80%; */
+    max-width: 550px !important;
+    text-align: left;
+}
+
+/* Form input styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+label {
+    color: #333;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 300px;
+    font-size: 1rem;
+}
+
+select {
+    padding: 10px;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    /* width: 100%; */
+    max-width: 150px;
+    font-size: 1rem;
+}
+
+/* Placeholder color */
+input::placeholder {
+    color: #aaa;
+}
+
+/* Paragraph styles */
+.paragraph1, .paragraph2 {
+    margin: 1rem auto;
+    max-width: 800px;
+    padding: 0 1rem;
+    text-align: justify;
+}
+
+.paragraph3 {
+    margin: 1rem auto;
+    /* max-width: 800px; */
+    padding: 0 1rem;
+    text-align: center;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: rgb(117, 196, 14);
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: rgb(72, 145, 7);
+}
+
+/* Footer */
+footer {
+    background-color: #f88010; /* Use hex for cleaner code */
+    color: white;
+    padding: 20px; /* Reduced padding for simplicity */
+    text-align: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+}
+
+footer h3 {
+    margin-bottom: 0.5rem; /* Simplified margin */
+    font-size: 1.3rem; /* Slightly smaller font size */
+}
+
+footer p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem; /* Reduced font size for compactness */
+}
+
+footer b {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #ffd700; /* Gold color for hover effect */
+}
+
+
+/* Media Queries for Responsiveness */
+@media (min-width: 768px) {
+    body {
+        font-size: 1.1rem;
     }
-     body{
-        text-align: center;
+
+    img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .part {
+        width: 70%;
+    }
+
+    h1 {
         font-size: 2rem;
-        line-height: 40px;
-        margin: 0;
-        padding: 0%;
-     }
-        
-     .one{
-        margin-left: 34px;
-        text-align: center;
-        border-radius: 5px;
     }
-    .two{
-        margin-left: 49px;
-        text-align: center;
-        border-radius: 5px; 
-    }
-    .three{
-        margin-left: 35px;
-        text-align: center;
-        border-radius: 5px;
-        
-    }
-    .location{
-        margin-left: 10px;
-        text-align: center;
-        border-radius: 5px;
+}
 
-
-    }
-    input{
-        padding-left: 40px;
-        padding-right: 40px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        border-radius: 5px;
+@media (min-width: 1024px) {
+    body {
+        font-size: 1.2rem;
     }
 
-    form{
-        
-        padding: 8rem 12rem;
-        display:flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
+    nav {
+        justify-content: space-around;
     }
 
-    
-
-    
-
-
-
-    .paragraph3{
-        color: aliceblue;
-        margin-top: 1rem;
+    .part {
+        width: 50%;
     }
-    .part{
-        background-color: rgb(170, 182, 178);
-        padding-left: 20px;
-        padding-right: 20px;
-        border-radius: 10px;
-        padding-bottom: 20px;
-    }
-
-    label{
-        color: aliceblue;
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-
-    }
-
-    span{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 2rem;
-    }
-    span input{
-        border-radius: 2rem;
-        width: 20rem;
-        text-align: center;
-        font-size: 1.5rem;
-        padding-top: 0.8rem;
-        padding-bottom: 0.8rem;
-    }
-
-
-    img{
-        width: 250px;
-        border-radius: 10em;
-        height: 250px;
-        
-    
-    }
-    a{
-        text-decoration: none;
-        
-        color: rgb(117, 196, 14);
-    }
-  
-
+}
