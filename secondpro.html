@@ -1,62 +1,153 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>
-            BIts Online Classroom
-        </title>
-        <style>
-            body{
-                text-align: center;
-                font-size: 200%;
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bits Online Classroom</title>
+    <style>
+        /* Global styles */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            text-align: center;
+            font-size: 1.2rem;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
 
-            }
-            a{
-                color: rgba(3, 24, 24, 0.562);
-                text-decoration: none ;
-            }
-        </style>
-    </head>
-    <body>
-        <span>
+        /* Navigation bar */
+        nav {
+            background-color: #8f8f6f;
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        nav a {
+            color: rgba(3, 24, 24, 0.8);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #555;
+        }
+
+        /* Main content */
+        main {
+            flex: 1;
+        }
+
+        h2 {
+            margin-top: 2rem;
+            color: rgb(143, 143, 111);
+        }
+
+        p {
+            margin: 1rem 0;
+        }
+
+        img {
+            width: 60px;
+            vertical-align: middle;
+            margin-right: 0.5rem;
+        }
+
+        .course-option {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
+
+        .course-option input {
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #f88010;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+            margin-top: 2rem;
+        }
+
+        footer h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+            font-size: 0.9rem;
+        }
+
+        footer b {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #ffd700;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
         <a href="index.html">Home</a>
         <a href="thirdpro.html">About</a>
-        <a href="#contact.html">contact</a>
-    </span>
-        <H2>
-            Bits Online Classroom
-    
-        </H2>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+        <h2>Bits Online Classroom</h2>
+
+        <p>Select Your Preferred Course</p>
+
+        <div class="course-option">
+            <img src="html_icon.png" alt="HTML">
+            <input type="checkbox">
+            <a href="https://youtu.be/FQdaUv95mR8?si=CVljtravadWUK-gK" target="_blank">Select</a>
+        </div>
+
+        <div class="course-option">
+            <img src="java_icon.png" alt="Java">
+            <input type="checkbox">
+            <a href="https://youtu.be/VHbSopMyc4M?si=a288Xc-boPOCdVa2" target="_blank">Select</a>
+        </div>
+
+        <div class="course-option">
+            <img src="python_icon.png" alt="Python">
+            <input type="checkbox">
+            <a href="https://youtu.be/b093aqAZiPU?si=QcICbQKq0Fp5-zee" target="_blank">Select</a>
+        </div>
+    </main>
+
+    <footer id="contact">
+        <h3>Contact Us - Information Technology Academy</h3>
         <p>
-            Select Your Preferred Course
+            <b>Get in Touch</b> We are here to help whether you have questions about our courses, need support, or want to learn more about Bits Information Technology.
         </p>
-        <img src="html_icon.png" alt="html" style="width: 60px;">
-        <input type="checkbox" >
-        <a href="https://youtu.be/FQdaUv95mR8?si=CVljtravadWUK-gK">Select</a>
-        <br/>
+        <p>Email: info@bitacademy.com</p>
+    </footer>
 
-
-        <img src="java_icon.png" alt="java" style="width: 60px;">
-        <input type="checkbox">
-        <a href="https://youtu.be/VHbSopMyc4M?si=a288Xc-boPOCdVa2">Select</a>
-        <br/>
-
-        <img src="python_icon.png" alt="python" style="width:60px;">
-        <input type="checkbox">
-        <a href="https://youtu.be/b093aqAZiPU?si=QcICbQKq0Fp5-zee">Select</a>
-        <br/>
-
-        <div id="contact">
-            <h3>Contact Us- Information Technology Academy</h3>
-            <p>
-               <b> Get in Touch</b>
-               We are here to help whether you have questions for our courses, </br>
-               need support, or wants to learn more about Bits Information Technology
-            </p>
-            <p>
-                Email:info@bitacademy
-            </p>
-            </div>
-    
-     
-    </body>
+</body>
 </html>
